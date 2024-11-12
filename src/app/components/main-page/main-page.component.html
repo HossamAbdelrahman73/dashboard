@@ -1,0 +1,215 @@
+<div>
+  <div>
+    <div class="row p-4 gap-md-0 gap-3 align-items-center">
+      <div class="col-lg-2 col-sm-6 col-12">
+        <div class="d-flex gap-2 aliitem">
+          <div class="d-flex align-items-center">
+            <span><i class="dot me-1 fa-solid fa-circle"></i></span>
+            <span><i class="fa-solid fs-3 fa-building-flag gas"></i></span>
+          </div>
+          <div class="r d-flex justify-content-center align-items-center gap-1">
+            <span class="fs-3"> 2/3</span>
+            <span class="station fw-medium"
+              >Monitored
+              <p class="m-0">stations</p></span
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-sm-6 col-12">
+        <div class="d-flex gap-2 align-items-center">
+          <span><i class="dot me-1 fa-solid fa-circle"></i></span>
+          <span><i class="fs-3 fa-solid fa-rotate-right"></i></span>
+          <span class="fs-3">20s</span>
+          <span class="station fw-medium"
+            >Last
+            <p class="m-0">Update</p></span
+          >
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-sm-6 col-12">
+        <div
+          class="d-flex justify-content-between align-items-center rounded-5 pe-4 days"
+        >
+          <span class="py-1 px-4 rounded-5 act text-white">TODAY</span>
+          <span class="">YESTERDAY</span>
+          <span class="">LAST WEEK</span>
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-sm-6 col-12">
+        <div class="d-flex align-items-center">
+          <span
+            ><i class="me-2 fs-4 fa-solid fa-caret-up fa-rotate-90 gas"></i
+          ></span>
+          <div
+            class="d-flex justify-content-between align-items-center w-100 border-3 border-bottom border-black p-2"
+          >
+            <p class="m-0"><span class="fw-bolder">Start</span> date - time</p>
+            <span><i class="fa-solid fa-calendar-days"></i></span>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2 col-sm-6 col-12">
+        <div class="d-flex align-items-center">
+          <span> <i class="fa-solid me-2 fs-5 fa-pause gas"></i></span>
+          <div
+            class="d-flex justify-content-between align-items-center w-100 border-3 border-bottom border-black p-2"
+          >
+            <p class="m-0"><span class="fw-bolder">End</span> date - time</p>
+            <span><i class="fa-solid fa-calendar-days"></i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="p-5 pb-4 total-main">
+    <div class="px-0">
+      <div class="row">
+        <div class="left col-lg-9 mb-lg-0 mb-4">
+          <div class="row gap-md-0 gap-3">
+            <div class="col-md-3">
+              <div class="total-something p-3 h-100 rounded-3">
+                <p class="my-0 fs-2">71,028 <span class="fs-5">EGP</span></p>
+                <span class="fw-bold">Total Value</span>
+                <div class="arrow-num mt-4">
+                  <span><i class="me-1 fa-solid fa-sort-down"></i> </span
+                  ><span>2%</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="bg-white p-3 h-100 rounded-3">
+                <p class="my-0 fs-2">
+                  20,000
+                  <span class="position-relative"
+                    >50 m <span class="number">3</span></span
+                  >
+                </p>
+                <span class="fw-bold">Total Sales</span>
+                <div class="arrow-nu mt-4">
+                  <span><i class="me-1 fa-solid fa-sort-down"></i> </span
+                  ><span class="position-relative"
+                    >50 m <span class="number">3</span></span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="bg-white p-3 h-100 rounded-3">
+                <p class="my-0 fs-2">
+                  20,000
+                  <span class="position-relative"
+                    >50 m <span class="number">3</span></span
+                  >
+                </p>
+                <span class="fw-bold">Avg Sales</span>
+                <div class="arrow-num mt-4">
+                  <span><i class="me-1 fa-solid fa-sort-down"></i> </span
+                  ><span class="position-relative"
+                    >50 m <span class="number">3</span></span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="bg-white p-3 rounded-3">
+                <p class="my-0 fs-2">1567 <span class="fs-5">EGP</span></p>
+                <span class="fw-bold"
+                  >Total Transaction
+                  <p class="m-0">Count</p></span
+                >
+                <div class="arrow-nu">
+                  <span><i class="me-1 fa-solid fa-sort-down"></i> </span
+                  ><span>20</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-end p-0">
+            <div
+              class="bg-white choose gap-4 rounded-5 my-5 d-flex justify-content-between align-items-center rounded-5 days p-1"
+            >
+              <span
+                routerLink="/chart"
+                routerLinkActive=" rounded-5 act text-white  "
+                class="chose gap-1 cr"
+                ><i class="fa-solid fa-chart-simple"></i> GRAPH</span
+              >
+              <span
+                routerLink="/details"
+                routerLinkActive=" rounded-5 act text-white "
+                class="chose gap-1 cr"
+                ><i class="fa-solid fa-list-check"></i> List</span
+              >
+            </div>
+          </div>
+
+          <router-outlet></router-outlet>
+        </div>
+
+        <div class="right col-lg-3">
+          <div class="">
+            <h4 class="text-center fw-bold">Hourly Sales</h4>
+            <div>
+              <app-chart></app-chart>
+            </div>
+          </div>
+          <div>
+            <h4 class="my-5 text-center fw-bold">Sales by Station</h4>
+            <div>
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <span
+                    ><i class="fa-solid fs-3 fa-building-flag gas me-2"></i
+                  ></span>
+                  <span class="fw-medium fs-5">Station Name</span>
+                </div>
+                <div class="fw-medium fs-5">
+                  62,721
+                  <span class="position-relative">
+                    m <span class="number">3</span></span
+                  >
+                </div>
+              </div>
+              <div class="progress"></div>
+            </div>
+            <div class="my-5">
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <span
+                    ><i class="fa-solid fs-3 fa-building-flag gas me-2"></i
+                  ></span>
+                  <span class="fw-medium fs-5">Station Name</span>
+                </div>
+                <div class="fw-medium fs-5">
+                  62,721
+                  <span class="position-relative">
+                    m <span class="number">3</span></span
+                  >
+                </div>
+              </div>
+              <div class="progress"></div>
+            </div>
+            <div>
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <span
+                    ><i class="fa-solid fs-3 fa-building-flag gas me-2"></i
+                  ></span>
+                  <span class="fw-medium fs-5">Station Name</span>
+                </div>
+                <div class="fs-4 transparent-text fw-medium">NM</div>
+              </div>
+              <div class="progres"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
